@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<script src="./lib/diff.js"></script>
+    <script src="./lib/scope.js"></script>
+    <script src="./lib/expressionParser.js"></script>
+    <script src="./lib/domParser.js"></script>
+    <script src="./lib/directive.js"></script>
+    <script src="./lib/digest.js"></script>
+	<script src="./lib/bindNode.js"></script>
+	<script src="./lib/controller.js"></script>
+
+</head>
+<body>
+<div>
+    <h1>{'To' + 'DO'}: {todos.length}</h1>
+    <ul>
+        <li style="{display: todos.length > 0 ? 'none' : 'inherit'}">no item</li>
+        <todo-item for="item in todos" todo="item"></todo-item>
+    </ul>
+    <p><add-todo todos="todos" addItem="addItem"></add-todo></p>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>

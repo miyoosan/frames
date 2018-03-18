@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>todolist</title>
+</head>
+<body>
+<div>
+    <h1>{'To' + 'DO'}: {todos.length}</h1>
+    <ul>
+        <li style="{display: todos.length > 0 ? 'none' : 'inherit'}">no item</li>
+        <li for="item in todos">{item.name}<button click="remove(item)">x</button></li>
+    </ul>
+    <p><input type="text" model="newItemName"><button click="add()">add</button></p>
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
